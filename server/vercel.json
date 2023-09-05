@@ -1,4 +1,12 @@
-{
+{  "headers": [
+    {
+      "source": "/api/serviceinfo",
+      "headers": [
+        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
+      ]
+    }
+  ],
+  
   "version": 2,
   "builds": [
     { "src": "*.js", "use": "@vercel/node" }
@@ -7,13 +15,6 @@
     { "src": "/(.*)", "dest": "/" }
   ],
   
-  "headers": [
-    {
-      "source": "/api/serviceinfo",
-      "headers": [
-        { "key": "Access-Control-Allow-Methods", "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT" },
-      ]
-    }
-  ]
+
   
 }
