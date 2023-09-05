@@ -1,0 +1,29 @@
+.footer {
+   height: 200px;
+   background-color: black;
+   margin: 0;
+   padding: 0;
+
+ }
+
+.callthewizard {
+  display: flex;
+  height: 160px;
+  background-color: #1f5bff;
+}
+
+.callthewizardtitle {
+  font-family: "FuraCode Nerd Font", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 40px !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-weight: 400 !important;
+  color: white;
+  margin: auto;
+  padding: auto;
+}
+
+.logo {
+  padding-top: 75px;
+  padding-left: 190px;
+}
