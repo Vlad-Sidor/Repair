@@ -5,6 +5,17 @@ module.exports = function(role) {
         if (req.method === "OPTIONS") {
             next()
         }
+        if (req.method === "GET") {
+        next()
+        }
+
+        if (req.method === "POST") {
+        next()
+        }
+
+        if (req.method === "PUT") {
+        next()
+        }
         try {
             const token = req.headers.authorization.split(' ')[1] // Bearer asfasnfkajsfnjk
             if (!token) {
