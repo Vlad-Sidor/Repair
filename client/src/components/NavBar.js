@@ -25,7 +25,7 @@ const NavBar = observer(() => {
             <Container>
                 <NavLink  to={ADMIN_ROUTE}>
                 <Image src={Logo}/>    
-                </NavLink> {user.isAuth ?
+                </NavLink> 
                     <Nav className="ml-auto" style={{color: 'white'}}>
                         <Button
                             variant={"outline-dark"}
@@ -49,11 +49,7 @@ const NavBar = observer(() => {
                             Выйти
                         </Button>
                     </Nav>
-                    :
-                    <Nav className="ml-auto" style={{color: 'white'}}>
-                        <Button variant={"outline-dark"} onClick={() => history.push(ADMIN_ROUTE)}>Авторизация</Button>
-                    </Nav>
-                }
+                   
             </Container>
         </Navbar>
 
