@@ -8,7 +8,7 @@ export const fetchBrands = async () => {
 }
 
 export const createDevice = async (device) => {
-    const {data} = await $authHost.post('api/serviceinfo', device)
+    const {data} = await $host.post('api/serviceinfo', device)
     return data
 }
 
@@ -30,7 +30,7 @@ export const fetchOneDevice = async (id) => {
 }
 
 export const updateOneDevice = async (id, device) => {
-    const {data} = await $authHost.put('api/serviceinfo/'+ id,  device)
+    const {data} = await $host.put('api/serviceinfo/'+ id,  device)
     return data
 }
 
