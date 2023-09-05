@@ -1,0 +1,38 @@
+.card-style {
+   width: 97.5%;
+   cursor: 'pointer';
+   background-color: black;
+   color: white;
+   border-radius: 30px;
+   
+}
+
+.card-title {
+   display: flex;
+}
+
+.title {
+   color: white;
+   font-weight: bold;
+   font-family: 'TildaSans',Arial,sans-serif;
+   font-size: 16px;
+   padding-top: 10px;
+   padding-left: 20px;
+}
+
+.title-servicelist{ 
+   font-family: 'TildaSans',Arial,sans-serif;
+   font-size: 20px;
+   padding-top: 20px;
+   padding-left: 16px;
+}
+
+.edittitle{
+   color: white;
+   font-weight: normal;
+   font-family: 'TildaSans',Arial,sans-serif;
+   font-size: 16px;
+   margin-left: auto;
+   padding-top: 10px;
+   padding-right: 20px;
+}
