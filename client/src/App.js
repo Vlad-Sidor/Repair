@@ -14,11 +14,9 @@ const App = observer(() => {
 
     console.log(process.env.REACT_APP_API_URL)
 
-    useEffect(() => {
-        check().then(data => {
+      useEffect(() => {
             user.setUser(true)
             user.setIsAuth(true)
-        }).finally(() => setLoading(false))
     }, [])
 
     if (loading) {
