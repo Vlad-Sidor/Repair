@@ -17,12 +17,12 @@ export const publicRoutes = [
         Component: Shop
     },
     {
-        path: LOGIN_ROUTE,
-        Component: Auth
+        path: ADMIN_ROUTE,
+        Component: Admin
     },
     {
-        path: REGISTRATION_ROUTE,
-        Component: Auth
+        path: ADMIN_ROUTE,
+        Component: Admin
     },
     {
         path: DEVICE_ROUTE + '/:id',
