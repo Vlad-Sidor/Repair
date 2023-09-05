@@ -51,7 +51,7 @@ const NavBar = observer(() => {
                     </Nav>
                     :
                     <Nav className="ml-auto" style={{color: 'white'}}>
-                        <Button variant={"outline-dark"} onClick={() => history.push(LOGIN_ROUTE)}>Авторизация</Button>
+                        <Button variant={"outline-dark"} onClick={() => history.push(ADMIN_ROUTE)}>Авторизация</Button>
                     </Nav>
                 }
             </Container>
