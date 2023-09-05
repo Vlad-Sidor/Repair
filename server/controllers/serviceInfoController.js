@@ -91,6 +91,7 @@ class serviceInfoController {
         }
         return res.json(devices)
     }
+
     
     /* async getAll(req, res) {
         const devices = await ServiceInfo.findAll()
