@@ -10,7 +10,7 @@ import './components/css/app.css'
 
 const App = observer(() => {
     const {user} = useContext(Context)
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
 
     console.log(process.env.REACT_APP_API_URL)
 
