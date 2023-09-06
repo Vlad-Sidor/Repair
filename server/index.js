@@ -11,15 +11,34 @@ const edit = express();
 
 const PORT = process.env.PORT || 5000
 
+var _ = require('underscore');
+
+function allowCrossDomain(req, res, next) {
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+
+  var origin = req.headers.origin;
+  if (_.contains(app.get('allowed_origins'), origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
+
+  if (req.method === 'OPTIONS') {
+    res.send(200);
+  } else {
+    next();
+  }
+}
+
+
 const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(express.static(path.resolve(__dirname, 'static')))
 app.use(fileUpload({}))
 app.use('/api', router)
-
+app.use(allowCrossDomain);
 // Обработка ошибок, последний Middleware
-app.use(errorHandler)
+
+
 
 const start = async () => {
     try {
